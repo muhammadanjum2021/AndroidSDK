@@ -1,0 +1,10 @@
+co.acoustic.mobile.push.sdk.api
+co.acoustic.mobile.push.sdk.api.attribute
+co.acoustic.mobile.push.sdk.api.broadcast
+co.acoustic.mobile.push.sdk.api.db
+co.acoustic.mobile.push.sdk.api.encryption
+co.acoustic.mobile.push.sdk.api.event
+co.acoustic.mobile.push.sdk.api.fcm
+co.acoustic.mobile.push.sdk.api.message
+co.acoustic.mobile.push.sdk.api.notification
+co.acoustic.mobile.push.sdk.api.registration
