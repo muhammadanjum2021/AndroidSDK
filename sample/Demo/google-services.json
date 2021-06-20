@@ -1,0 +1,41 @@
+{
+    "project_info": {
+      "project_number": "178663367394",
+      "firebase_url": "https://acoustic-debug.firebaseio.com",
+      "project_id": "acoustic-debug",
+      "storage_bucket": "acoustic-debug.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:178663367394:android:aa48845c36cd1d4b9bf4bb",
+          "android_client_info": {
+            "package_name": "co.acoustic.mobile.push.samples.android"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "178663367394-q93o3vdta960cu8juepcluhrac83559f.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyBZzjlYYfcHCZp1t6uE3WhOuUJHBso3B2E"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "178663367394-q93o3vdta960cu8juepcluhrac83559f.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
+  

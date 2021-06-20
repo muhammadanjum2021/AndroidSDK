@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.acoustic.mobile.push.samples.android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Uncomment this if you are not using location -->
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" tools:node="remove"/>
+    -->
+
+    <!-- Uncomment this if you're not using bluetooth -->
+    <!--
+    <uses-permission android:name="android.permission.BLUETOOTH" tools:node="remove"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"  tools:node="remove"/>
+    -->
+
+
+
+    <application
+        tools:replace="android:allowBackup, android:appComponentFactory, android:name"
+        android:name=".SampleApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="sdk"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+
+        <!-- This is required for google play services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainSampleMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationDetailsSampleActivity"
+            android:label="@string/registration_details_name"
+            android:parentActivityName=".MainSampleMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainSampleMenuActivity" />
+        </activity>
+        <activity
+            android:name=".AttributesSampleActivity"
+            android:label="@string/attributes_name"
+            android:parentActivityName=".MainSampleMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainSampleMenuActivity" />
+        </activity>
+        <activity
+            android:name=".EventSampleActivity"
+            android:label="@string/event_test_name"
+            android:parentActivityName=".MainSampleMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainSampleMenuActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="co.acoustic.mobile.push.samples.android.LocationActivity"
+            android:label="@string/title_activity_location" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainSampleMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="co.acoustic.mobile.push.samples.android.plugin.ExampleActivity"
+            android:label="@string/title_activity_plugin_sample" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainSampleMenuActivity" />
+        </activity>
+
+        <receiver android:name="co.acoustic.mobile.push.samples.android.SampleNotifier" >
+            <intent-filter>
+                <action android:name="co.acoustic.mobile.push.sdk.NOTIFIER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Uncomment this if you don't use location -->
+        <!--
+        <receiver android:name="co.acoustic.mobile.push.sdk.location.LocationBroadcastReceiver" tools:node="remove"/>
+        <service android:name="co.acoustic.mobile.push.sdk.location.LocationRetrieveService" tools:node="remove"/>
+        <service android:name="co.acoustic.mobile.push.sdk.location.LocationEventsIntentService" tools:node="remove"/>
+        <service android:name="co.acoustic.mobile.push.sdk.location.LocationSyncAlarmListener" tools:node="remove"/>
+        <receiver android:name="co.acoustic.mobile.push.sdk.location.LocationUpdateCaller" tools:node="remove"/>
+        -->
+
+        <!-- Uncomment this if you don't use geofences -->
+        <!--
+        <receiver android:name="co.acoustic.mobile.push.sdk.location.GeofenceBroadcastReceiver" tools:node="remove"/>
+        -->
+
+        <!-- Uncomment this if you don't use the sdk fcm implementation -->
+        <!--
+        <service
+            android:name="co.acoustic.mobile.push.sdk.messaging.fcm.FcmMessagingService" tools:node="remove">
+        </service>
+        -->
+
+        <!-- Uncomment this if you don't use bluetooth -->
+        <!--
+        <service android:name="co.acoustic.mobile.push.sdk.beacons.MceBluetoothScanner" tools:node="remove"/>
+        <service android:name="co.acoustic.mobile.push.sdk.beacons.BeaconsVerifier" tools:node="remove"/>
+        -->
+
+
+
+
+
+    </application>
+
+</manifest>
