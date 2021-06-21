@@ -59,9 +59,9 @@ public class SampleNotifier extends MceBroadcastReceiver {
 
     }
 
-    @Override
-    public void onInboxCountUpdate(Context context) {
-    }
+//    @Override
+//    public void onInboxCountUpdate(Context context) {
+//    }
 
     @Override
     public void onC2dmError(Context context, String errorId) {
@@ -223,13 +223,13 @@ public class SampleNotifier extends MceBroadcastReceiver {
 
     }
 
-    @Override
+ /*   @Override
     public void onActionNotYetRegistered(Context context, String actionType) {
     }
 
     @Override
     public void onActionNotRegistered(Context context, String actionType) {
-    }
+    }*/
 
     @Override
     public void onLocationUpdate(Context context, Location location) {
