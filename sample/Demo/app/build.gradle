@@ -34,18 +34,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.aar'])
-    implementation files('/Users/muhammadanjum/Desktop/public/ git/AndroidSDK/plugins')
     implementation fileTree(dir: '/Users/muhammadanjum/Desktop/public\\ git/AndroidSDK/sample/Demo/app/libs/', include: ['*.aar', '*.jar'], exclude: [])
 
     implementation project(path: ':plugin-example')
-    fileTree(dir: 'libs', include: '**/*.aar')
+//    fileTree(dir: 'libs', include: '**/*.aar')
 //            .each { File file ->
 //        dependencies.add("implementation", [
 //                name: file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name },
 //                ext: 'aar'
 //        ])}
 
-//    implementation 'acoustic-mobile-push-android-sdk-3.8.2',ext : 'aar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     
