@@ -27,14 +27,12 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.aar'])
-    implementation fileTree(dir: '/Users/muhammadanjum/Desktop/public\\ git/AndroidSDK/plugins/', include: ['*.aar', '*.jar'], exclude: [])
-//    fileTree(dir: 'libs', include: '**/*.aar')
-//            .each { File file ->
+//    implementation fileTree(dir: 'libs', include: ['*.aar'])
 //        dependencies.add("implementation", [
 //                name: file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name },
 //                ext: 'aar'
 //        ])}
+    implementation fileTree(dir: 'libs', include: '**/*.aar')
 
 
 

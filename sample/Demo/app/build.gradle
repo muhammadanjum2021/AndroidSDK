@@ -33,16 +33,17 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.aar'])
-    implementation fileTree(dir: '/Users/muhammadanjum/Desktop/public\\ git/AndroidSDK/sample/Demo/app/libs/', include: ['*.aar', '*.jar'], exclude: [])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation fileTree(dir: 'libs', include: ['*.aar'])
 
     implementation project(path: ':plugin-example')
-//    fileTree(dir: 'libs', include: '**/*.aar')
+    implementation fileTree(dir: 'libs', include: '**/*.aar')
 //            .each { File file ->
 //        dependencies.add("implementation", [
 //                name: file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name },
 //                ext: 'aar'
 //        ])}
+//    implementation fileTree(dir:'libs',include : ['acoustic-mobile-push-android-sdk-3.8.3.aar','acoustic-mobile-push-android-sdk-plugin-calendar-3.8.3.aar'])
 
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
