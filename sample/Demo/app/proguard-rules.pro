@@ -61,6 +61,7 @@
 # added nov 17
 -dontwarn rx.internal.util.unsafe.**
 -keep class co.acoustic.mobile.push.sdk.** { *; }
+-keep class co.acoustic.mobile.push.samples.** { *; }
 -dontwarn co.acoustic.mobile.push.sdk.**
 -keep public class com.google.android.gms.** { *; }
 -dontwarn com.google.android.gms.**
